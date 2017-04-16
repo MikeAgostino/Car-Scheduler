@@ -82,13 +82,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Directory\CarsService.cs" />
+    <Compile Include="Dtos\ModelResponse.cs" />
+    <Compile Include="Dtos\ResponseDtos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceConfiguration.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Directory\" />
-    <Folder Include="Dtos\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

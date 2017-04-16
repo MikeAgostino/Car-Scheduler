@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Services.Directory;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -7,9 +8,19 @@ using System.Web.Http;
 
 namespace Car_Scheduler.Controllers
 {
-    public class CarsController : ApiController
+
+    //TODO: Implement Authentication
+    [RoutePrefix("api/cars")]
+    public class CarsController : BaseController
     {
-        // GET: api/Cars
+        private readonly CarsService _carsService;
+
+        public CarsController(CarsService carsService)
+        {
+           
+        }
+
+        [Route("")]
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
