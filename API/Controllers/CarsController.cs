@@ -17,13 +17,13 @@ namespace Car_Scheduler.Controllers
 
         public CarsController(CarsService carsService)
         {
-           
+            _carsService = carsService;
         }
 
         [Route("")]
-        public IEnumerable<string> Get()
+        public IHttpActionResult GetCars()
         {
-            return new string[] { "value1", "value2" };
+            return ResponseJSON(_carsService.GetCars(userId));
         }
 
         // GET: api/Cars/5
