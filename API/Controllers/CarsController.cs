@@ -23,6 +23,7 @@ namespace Car_Scheduler.Controllers
         [Route("")]
         public IHttpActionResult GetCars()
         {
+            var userId = "1";
             return ResponseJSON(_carsService.GetCars(userId));
         }
 

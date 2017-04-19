@@ -83,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Directory\CarsService.cs" />
+    <Compile Include="Dtos\CarDto.cs" />
     <Compile Include="Dtos\ModelResponse.cs" />
     <Compile Include="Dtos\ResponseDtos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
